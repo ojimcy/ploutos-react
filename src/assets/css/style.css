@@ -362,7 +362,8 @@ header .container {
   opacity: 0.5;
 }
 
-.logo img, .footer-logo {
+.logo img,
+.footer-logo {
   width: 140px;
 }
 
@@ -378,10 +379,11 @@ header .container {
 }
 .menu ul li a {
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-size: 16px;
   position: relative;
   padding: 10px 0px 30px 0px;
+  text-decoration: none;
 }
 .signin {
   margin-left: 30px;
@@ -2084,6 +2086,10 @@ footer.bg-pattern {
   width: 33.33%;
   float: left;
   padding-bottom: 10px;
+}
+
+.footer-link ul li a {
+  text-decoration: none;
 }
 .subscribe {
   position: relative;

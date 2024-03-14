@@ -1,0 +1,200 @@
+.nav-header {
+  background-color: #dedbe4;
+  display: inline-block;
+  height: 5rem;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  transition: all 0.2s ease;
+  width: 15.75rem;
+  z-index: 5;
+}
+
+.nav-header .brand-logo {
+  align-items: center;
+  color: #fff;
+  display: flex;
+  font-size: 1.125rem;
+  font-weight: 700;
+  height: 100%;
+  justify-content: flex-start;
+  padding-left: 2.9rem;
+  padding-right: 3rem;
+  text-decoration: none;
+  width: 100%;
+}
+
+.nav-header .logo-abbr {
+  height: 57px;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent;
+  height: 5rem;
+  padding: 0px 43px 0 9.563rem;
+  position: relative;
+  transition: all 0.2s ease;
+  z-index: 1;
+  z-index: 3;
+}
+
+.header .header-content {
+  align-items: center;
+  display: flex;
+  height: 100%;
+  padding-left: 7rem;
+  padding-right: 1.075rem;
+  position: relative;
+}
+
+.header-left .dashboard_bar {
+  color: #362465;
+  font-size: 1.75rem;
+  font-weight: 600;
+}
+
+.header-right .header-profile img {
+  width: 45px;
+}
+
+.header-profile img {
+  border: 3px solid #9568ff;
+  border-radius: 0.938rem;
+}
+
+.sidebar-main {
+  background-color: #f4f2f8;
+  box-shadow: 0 0.9375rem 1.875rem 0 rgba(0, 0, 0, 0.02);
+  height: calc(100% - 5rem);
+  padding-bottom: 10px;
+  padding-top: 4rem;
+  position: absolute;
+  top: 5rem;
+  transition: all 0.2s ease;
+  width: 15.75rem;
+  z-index: 6;
+}
+
+.sidebar-main .menu-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-main .menu-list > li > a {
+  font-size: 1rem;
+  margin: 5px 0;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.5s;
+  color: #737b8b;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 500;
+  align-items: center;
+  display: flex;
+}
+
+.sidebar-main .menu-list > li > a:hover {
+  background: #737b8b;
+  color: #fff;
+}
+
+.sidebar-main .menu-list a {
+  color: #737b8b;
+  display: block;
+  outline-width: 0;
+  padding: 0.625rem 1.875rem;
+  position: relative;
+  text-decoration: none;
+}
+
+
+.sidebar-main .menu-list > li a > .icon {
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+  border-radius: 0.125rem;
+  border-radius: 0.625rem;
+  display: inline-block;
+  font-family: Material Icons;
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 400;
+  height: auto;
+  line-height: 1;
+  margin-right: 0.65rem;
+  position: relative;
+  text-align: center;
+  top: 0;
+  vertical-align: middle;
+  width: auto;
+}
+
+.sidebar-main .menu-list ul {
+  padding: 0.5rem 0;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.sidebar-main .menu-list .active {
+  background: #737b8b;
+  color: #fff;
+}
+
+
+@media screen and (max-width: 768px) {
+  .header {
+    padding: 0px 0px 0 3.563rem;
+  }
+  .nav-header {
+    width: 9.75rem;
+    background-color: #fff;
+  }
+
+  .sidebar-main {
+    width: 15.75rem;
+  }
+
+  .sidebar-main .menu-list > li {
+    padding: 0;
+  }
+  .header-left .dashboard_bar {
+    font-size: 1.15rem;
+  }
+
+  .main-dashboard {
+    padding: 0 1rem;
+  }
+
+  .p-card {
+    padding: 0;
+  }
+  .p-card .user-info span {
+    font-size: 15px;
+  }
+
+  .earnings .section-title {
+    flex-direction: column;
+  }
+
+  .earnings-pills {
+    margin-top: 1rem;
+  }
+
+  .nav-header .brand-logo { 
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

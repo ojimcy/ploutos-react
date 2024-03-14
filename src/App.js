@@ -1,14 +1,18 @@
 import React from 'react';
 import './App.css';
-import './styles/style.css'
-import './styles/responsive.css'
-import './styles/color.css'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Layout from './layout/Layout';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      Home
-    </div>
+    <Router>
+      <Layout>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
+      </Layout>
+    </Router>
   );
 }
 

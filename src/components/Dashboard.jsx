@@ -2,6 +2,12 @@ import React from 'react';
 import { Card, CardBody, Col, Row } from 'reactstrap';
 
 import icon from '../assets/images/icon.png';
+import HistoryTable from './HistoryTable';
+
+const hist = [
+  { date: '2024-03-10', amount: '500 PLT' },
+  { date: '2024-03-11', amount: '750 PLT' },
+];
 
 function MainDashboard() {
   return (
@@ -69,13 +75,17 @@ function MainDashboard() {
                     </div>
                   </div>
                   <div className="cart-btn mt-4">
-                    <button className='claim-btn'>Claim</button>
+                    <button className="claim-btn">Claim</button>
                   </div>
                 </CardBody>
               </Card>
             </div>
           </Col>
         </Row>
+
+        <div className="history">
+          <HistoryTable history={hist} />
+        </div>
       </div>
     </>
   );

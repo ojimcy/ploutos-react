@@ -120,7 +120,6 @@
   text-decoration: none;
 }
 
-
 .sidebar-main .menu-list > li a > .icon {
   -webkit-font-feature-settings: 'liga';
   -webkit-font-smoothing: antialiased;
@@ -152,7 +151,6 @@
   background: #737b8b;
   color: #fff;
 }
-
 
 @media screen and (max-width: 768px) {
   .header {
@@ -193,8 +191,84 @@
     margin-top: 1rem;
   }
 
-  .nav-header .brand-logo { 
+  .nav-header .brand-logo {
     padding-left: 0;
     padding-right: 0;
   }
+}
+
+.amount-card {
+  background-color: #f4f2f8;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0px 5px 0px 0px #737b8b;
+  min-height: 243px;
+  padding-top: 5rem;
+}
+
+.coin-card {
+  background-color: #737b8b !important;
+  border-radius: 8px !important;
+  color: #fff !important;
+}
+
+.coin-card .chart-num,
+.coin-card .chart-num .amount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coin-card .chart-num .label {
+  font-size: 18px;
+}
+
+.coin-card .chart-num .amount .coin-image img {
+  max-width: 35px;
+}
+
+.coin-card .chart-num .amount {
+  font-size: 2.25rem;
+}
+
+.coin-card .chart-num .amount h2 {
+  margin-bottom: 0;
+}
+
+.coin-card .allocation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coin-card .cart-btn .claim-btn {
+  color: #fff;
+  background-color: #f3d112;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: 1px solid #f3d112;
+  padding: 14px 22px;
+  border-radius: 5px;
+  position: relative;
+  -webkit-transform: translateY(0px);
+  transform: translateY(0px);
+}
+
+.coin-card .cart-btn .claim-btn:hover {
+  -webkit-transform: translateY(-5px);
+  transform: translateY(-5px);
+}
+.coin-card .cart-btn .claim-btn:before {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+  transition: all 400ms ease;
 }

@@ -1,10 +1,13 @@
 import React from 'react';
+import MainDashboard from '../components/Dashboard';
+import { Container } from 'reactstrap';
 
 function Home() {
   return (
     <div>
-      This is home
-      <p>Children should come out here nau</p>
+      <Container>
+        <MainDashboard />
+      </Container>
     </div>
   );
 }

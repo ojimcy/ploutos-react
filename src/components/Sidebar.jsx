@@ -1,20 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { FiHome, FiLogOut } from 'react-icons/fi';
-import {
-  FaBars,
-  FaUser,
-  FaTimes,
-} from 'react-icons/fa';
+import { FaBars, FaUser, FaTimes } from 'react-icons/fa';
 import logo from '../assets/images/logo.png';
-import female from '../assets/images/male.png';
 import '../assets/css/dashboard.css';
-import {
-  DropdownItem,
-  DropdownMenu,
-  DropdownToggle,
-  UncontrolledDropdown,
-} from 'reactstrap';
+import { Button } from 'reactstrap';
 
 export default function Sidebar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -85,7 +75,7 @@ export default function Sidebar() {
                   className={`has-arrow ${isActive('/app/law-firm')}`}
                   onClick={closeMobileMenu}
                 >
-                  <FiLogOut className='icon' /> 
+                  <FiLogOut className="icon" />
                   <span>Logout</span>
                 </Link>
               </li>
@@ -108,20 +98,7 @@ export default function Sidebar() {
                 </div>
                 <div className="navbar-nav header-right">
                   <div className="header-profile">
-                    <UncontrolledDropdown>
-                      <DropdownToggle className="p-0" color="empty">
-                        <Link className="nav-link">
-                          <img
-                            src={female}
-                            alt="profile"
-                            className="profile-pic"
-                          />
-                        </Link>
-                      </DropdownToggle>
-                      <DropdownMenu className="mt-3" end>
-                        <DropdownItem>Logout</DropdownItem>
-                      </DropdownMenu>
-                    </UncontrolledDropdown>
+                    <Button color="success">Connect Wallet</Button>
                   </div>
                 </div>
               </div>

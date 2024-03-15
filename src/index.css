@@ -510,3 +510,9 @@ section {
     padding: 40px 11px;
   }
 }
+
+@media (min-width: 992px) {
+  .main-content {
+    margin-left: 17.5rem;
+  }
+}

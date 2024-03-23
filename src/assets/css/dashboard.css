@@ -281,3 +281,76 @@
   min-height: 243px;
   margin-top: 5rem;
 }
+
+.presale-card {
+  min-width: 350px;
+  min-height: 250px;
+  background-color: #f4f2f8;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+.presale-progress .card {
+  border: none;
+  background-color: #737b8b;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.presale-progress .card .card-body {
+  width: 100%;
+}
+
+.presale-progress .card .raised {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.presale-progress .card .stage {
+  color: #f3d112;
+}
+
+.presale-progress .card .price-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount-input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount-input .form-control {
+  width: 100px;
+  border: none;
+}
+
+.amount-input .symbol {
+  background-color: #737b8b;
+  border-radius: 30px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.amount-input .symbol img {
+  width: 36px;
+}
+
+.presale-card .presale-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.presale-card .presale-btn button {
+  width: 100%;
+  font-size: 18px;
+}
+
+
+.amount-text {
+  color: #a8adb9;
+}
